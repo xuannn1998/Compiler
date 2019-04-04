@@ -1,0 +1,123 @@
+1:#pragma source on
+
+2:#pragma token on
+
+3:#pragma statistic on
+
+<KW:int>
+<id:main>
+<delim:(>
+<delim:)>
+4:int main()
+
+<delim:{>
+5:{
+
+<KW:int>
+<id:a>
+<delim:,>
+<id:b>
+<delim:;>
+6:        int a,b;
+
+<KW:float>
+<id:d>
+<delim:;>
+7:        float d;
+
+8:
+
+<id:a>
+<"=">
+<integer:1>
+<"+">
+<integer:2>
+<"*">
+<integer:3>
+<"+">
+<integer:4>
+<delim:;>
+9:        a = 1+2*3+4;
+
+<id:b>
+<"=">
+<id:a>
+<"*">
+<integer:88>
+<delim:;>
+10:        b = a*88;
+
+<id:a>
+<"=">
+<string:abcbbcbadfsf12354642>
+<delim:;>
+11:	a = "abcbbcbadfsf12354642";
+
+<id:d>
+<"=">
+<id:b>
+<"-">
+<id:a>
+<"+">
+<float:10.01>
+<delim:;>
+12:        d = b-a+10.01;
+
+<id:d>
+<"=">
+<delim:(>
+<delim:(>
+<delim:(>
+<float:101.234>
+<delim:)>
+<"*">
+<integer:18>
+<delim:)>
+<delim:)>
+<delim:;>
+13:        d = (((101.234)*18));
+
+<id:d>
+<"=">
+<id:b>
+<"%">
+<delim:(>
+<id:a>
+<"+">
+<integer:18>
+<delim:)>
+<delim:;>
+14:        d = b % (a+18);
+
+<id:abcs>
+<"=">
+<integer:123>
+<delim:;>
+15:	abcs = 123;
+
+<KW:return>
+<id:x>
+<"+">
+<integer:2>
+<delim:;>
+16:	return x+2;
+
+<KW:break>
+<delim:;>
+17:	break;
+
+<KW:continue>
+<delim:;>
+18:	continue;
+
+<delim:}>
+19:}
+
+20:
+
+main	1
+a	6
+b	4
+d	4
+abcs	1
+x	1
